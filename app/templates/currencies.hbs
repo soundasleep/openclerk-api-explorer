@@ -1,5 +1,7 @@
-<h1>Currencies</h1>
+{{outlet}}
+
+<h1>{{link-to "Currencies" "currencies"}}</h1>
 
 {{#each currency in this}}
-  <li><b>{{currency.abbr}}</b>: {{currency.name}}</li>
+  <li><b>{{currency.abbr}}</b>: {{link-to currency.name "currencies.show" currency}}</li>
 {{/each}}

@@ -6,5 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.resource('currencies');
+  this.resource('currencies', { path: '/currencies' }, function() {
+    this.route('show', { path: '/:code'} );
+  });
 });
