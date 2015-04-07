@@ -1,5 +1,4 @@
 import Ember from "ember";
-import Currency from "../../models/currency.js";
 
 export default Ember.Route.extend({
   model: function(params) {
