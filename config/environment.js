@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'openclerk-api-explorer',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',   // Github pages does not support auto
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -45,7 +45,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/openclerk-api-explorer/';
   }
 
   return ENV;
