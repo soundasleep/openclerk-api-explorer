@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/.git-dist
 
 # dependencies
 /node_modules
